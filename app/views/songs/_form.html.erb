@@ -21,12 +21,36 @@
     <%= f.number_field :duration %>
   </div>
 
-  <div class="field">
-    <%= f.label :genre %>
-    <%= f.text_field :genre %>
-  </div>
+  <label class="col-lg-2 control-label">Genres</label>
+      <div class="col-lg-10">
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadios" id="1" value="option1" checked="">
+            Pop
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadios" id="2" value="option2">
+            Rock
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadios" id="3" value="option2">
+            Cumbia
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadios" id="4" value="option2">
+            Reggaeton
+          </label>
+        </div>
+      </div>
+    </div>
 
-  <div class="actions">SS
+  <div class="actions">
     <%= f.submit %>
   </div>
 <% end %>

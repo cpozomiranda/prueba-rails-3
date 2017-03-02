@@ -8,8 +8,8 @@ class User < ApplicationRecord
          has_many :songs,
          through: :user_songs
 
-         user.rb enum role: [:guest, :admin]
-         
+         enum role: [:guest, :admin]
+
          before_save :default_role
          
   		def default_role
