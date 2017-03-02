@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'user_songs/index'
+
   devise_for :users
   resources :songs
  
